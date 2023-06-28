@@ -1,0 +1,6 @@
+com/curso/servicios/ServicioDeEmails.class
+com/curso/Aplicacion.class
+com/curso/entidades/Animalito.class
+com/curso/servicios/ServicioDeAnimalitos.class
+com/curso/controlador/ExposicionServicioAnimalitosRest.class
+com/curso/repositorios/RepositorioDeAnimalitos.class
