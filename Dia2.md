@@ -30,9 +30,9 @@ SuministradorDeDiccionarios
     Probar pasando un idioma que no existe
 
 ## Partes de una prueba                     Gherkin
-    PRECONDICIONES... ESTADO INICIAL        GIVEN
-    TRABAJO QUE HACEMOS                     WHEN
-    POST COMPROBACIONES                     THEN
+    PRECONDICIONES... ESTADO INICIAL        GIVEN       Dado
+    TRABAJO QUE HACEMOS                     WHEN        Cuando
+    POST COMPROBACIONES                     THEN        Entonces
 
 CARACTERISTICA: Función tienesDiccionarioDe(idioma)
 
@@ -108,8 +108,11 @@ CARACTERISTICA:     Función getDiccionario(String idioma)
             mesa   -> ["mesa", "fresa", "misa"]
             7y82783Ç$$$092·$()!=·"¢#¢¢∞∞###:'() -> [] Lista vacia... y es perfectamente válido
 
+        datos                    datos que también conozco
+Prueba ----->  |   Suministrador ---------+  ----------------> Repositorio ----> BBDD   |
+        <----                    <--------+  -----------------
+        respuesta que debería       respuesta que también conozco
 
-Prueba ----->  |   Suministrador ---> BBDD   |
 
 Qué prueba he montado? Sistema [] -> Behavior Driven Development
 
@@ -204,6 +207,7 @@ Dummy
                 getDiccionario()        ---------->     Mandar Email cuando alguien pide un idioma
                                         spy
                                         mock
+                                        dummy
 
             class EmailServiceSpy {
                 private int llamadas = 0;
@@ -245,7 +249,7 @@ Dummy
 
 # Para qué me están sirviendo las pruebas?
 
-- Entender el comportamiento que debe tener mi componente
+- Entender el comportamiento que debe tener mi componente ->Sonarqube : Complejidad ciclomática
 - Validar el API
 - Poder comprobar que la función tiene el comportamiento adecuado
 

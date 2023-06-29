@@ -370,6 +370,9 @@ COMPONENTES
 3: L    Principio de sustitución de Liskov
         Un componente del sistema debería poder ser reemplazado por subtipos sin alterar el funcionamiento del programa.
 
+4: I    Principio de Segregación de la Interfaz
+        Prefiero muchas interfaces concretas, que una interfaz genérica
+
 5: D    Principio de inversión de dependencias
         Un componente de alto nivel no debería depender de Implementaciones... solo de abstracciones (contratos, interfaces)
         Inyección de dependencias es una forma de conseguir respetar este principio
